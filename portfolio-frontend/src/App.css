@@ -2,7 +2,7 @@
 
 @layer components {
   .navbar {
-    @apply w-full bg-neutral-800 h-19 flex items-center justify-between px-6 border-b-2 border-neutral-700
+    @apply fixed top-0 w-full bg-neutral-800/80 h-19 px-6 border-b-2 border-neutral-700 z-40 backdrop-blur-lg shadow-lg
   }
 
   body {
