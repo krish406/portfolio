@@ -4,7 +4,6 @@ function Navbar() {
       <div className="mx-auto px-4">
         <div className="flex justify-between items-center">
           <span className="text-white text-xl">Krish Shah</span>
-
           <div className="hidden md:flex items-center space-x-10">
             <a
               href="#about"
