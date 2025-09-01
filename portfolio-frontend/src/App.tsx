@@ -5,7 +5,7 @@ import Projects from "./Projects.tsx";
 
 function App() {
   return (
-    <div className="bg-stone-900 w-full h-screen">
+    <div className="bg-neutral-950 w-full h-screen">
       <Navbar></Navbar>
       <Description></Description>
       <Projects></Projects>
