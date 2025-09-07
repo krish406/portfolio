@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Description() {
   const finalText = "I'm a Software Engineer";
@@ -24,9 +25,9 @@ function Description() {
     <>
       <section
         id="about"
-        className="py-25 flex flex-row items-center justify-evenly"
+        className="py-25 flex flex-row flex-wrap items-center justify-evenly"
       >
-        <div className="flex flex-col gap-2 p-8 w-lg">
+        <div className="flex flex-col gap-2 p-8 py-20 w-lg">
           <p className="text-xl text-neutral-400">Hello, my name is Krish</p>
           <p className="text-5xl tracking-tight text-white py-1">
             {text} <span> {isLoaded ? null : "|"} </span>
@@ -35,7 +36,7 @@ function Description() {
             I specialize in making robust web applications using modern
             technologies like React, TypeScript, and Node.js.
           </p>
-          <div className="mt-3 flex flex-wrap items-center gap-4">
+          <div className="mt-3 flex items-center gap-4">
             <a
               href="#projects"
               className="rounded-2xl px-5 py-3 text-sm font-medium text-neutral-900 bg-indigo-300/90 border border-neutral-700 hover:bg-indigo-200 transition ease-in hover:-translate-y-1"
@@ -51,10 +52,20 @@ function Description() {
               Download Resume
             </a>
             <a
-              href="#contact"
-              className="text-sm text-neutral-400 hover:text-neutral-200"
+              href="https://github.com/krish406"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl px-3 py-3 text-sm font-medium text-white bg-neutral-800 border border-neutral-700 hover:bg-neutral-700 transition flex items-center gap-2"
             >
-              Get in touch →
+              <FaGithub size={20} />
+            </a>
+            <a
+              href="https://linkedin.com/in/krishshah"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl px-3 py-3 text-sm font-medium text-white bg-blue-700 border border-blue-800 hover:bg-blue-600 transition flex items-center gap-2"
+            >
+              <FaLinkedin size={20} />
             </a>
           </div>
         </div>
