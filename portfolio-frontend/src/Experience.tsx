@@ -24,43 +24,49 @@ function Experience() {
       className="flex justify-center min-h-screen bg-neutral-950 pt-19"
     >
       <div className="flex flex-col justify-center w-full max-w-6xl">
-        <h2 className="text-4xl text-white text-center mb-8">
-          Experience 
-        </h2>
-        <div className="grid grid-cols-1 gap-8">
+        <p className="text-5xl tracking-tight text-white text-center mb-8 mt-10">
+          Experience
+        </p>
+        <div className="grid grid-cols-1">
           {experiences.map((experience, index) => (
-            <div
-              key={index}
-              className="p-8 rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="flex flex-col h-full">
-                <div className="mb-4">
-                  <h3 className="text-xl font-semibold text-white mb-2">
-                    {experience.title}
-                  </h3>
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="text-indigo-400 font-medium">
-                      {experience.company}
-                    </span>
-                    <span className="text-neutral-400 text-sm">
-                      {experience.duration}
-                    </span>
+            <div key={index}>
+              <div
+                className="flex flex-row mb-10 rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 p-6 hover:border-indigo-400 transition-all duration-300"
+              >
+                <img 
+                  width={"150px"} 
+                  height={"150px"} 
+                  className="border border-white mr-8 flex-shrink-0"
+                />
+                <div className="flex flex-col flex-grow">
+                  <div className="mb-4">
+                    <h3 className="text-xl text-white mb-2">
+                      {experience.title}
+                    </h3>
+                    <div className="flex justify-between items-center mb-3">
+                      <span className="text-indigo-400 font-medium">
+                        {experience.company}
+                      </span>
+                      <span className="text-neutral-400 text-sm">
+                        {experience.duration}
+                      </span>
+                    </div>
                   </div>
-                </div>
 
-                <p className="text-gray-400 mb-4 flex-grow">
-                  {experience.description}
-                </p>
+                  <p className="text-gray-400 mb-4">
+                    {experience.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-2">
-                  {experience.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 text-xs bg-neutral-800 text-indigo-300 rounded-full border border-neutral-600"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  <div className="flex flex-wrap gap-2">
+                    {experience.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="px-3 py-1 text-xs bg-neutral-800 text-indigo-300 rounded-full border border-neutral-600"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

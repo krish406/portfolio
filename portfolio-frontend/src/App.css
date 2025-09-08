@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
 @layer components {
-  .navbar {
-    @apply fixed top-0 w-full bg-neutral-800 h-19 px-6 border-b-2 border-neutral-700 z-40 backdrop-blur-lg shadow-lg
+  @theme {
+    --font-inter: "Gal", sans-serif;
   }
 
-  a, span{
+  .navbar {
+    @apply fixed top-0 w-full bg-neutral-800 h-19 px-6 border-b-2 border-neutral-700 z-40 backdrop-blur-lg shadow-lg;
+  }
+
+  body {
     font-family: "DM Sans", sans-serif;
   }
 

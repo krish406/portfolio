@@ -2,15 +2,15 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="w-full h-screen items-center bg-stone-900 py-30"
+      className="flex justify-center min-h-screen bg-neutral-950 pt-19"
     >
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-5xl tracking-tight text-white mb-12 text-center">
+      <div className="flex flex-col justify-center w-full max-w-6xl">
+        <p className="text-5xl tracking-tight text-white text-center mb-8 mt-10">
           Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="bg-neutral-900 border border-gray-800 rounded-xl p-8 shadow flex flex-col">
-            <h3 className="text-xl font-semibold text-white mb-2">
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
+            <h3 className="text-xl text-white mb-2">
               Project One
             </h3>
             <p className="text-gray-400 mb-4">
@@ -19,13 +19,13 @@ function Projects() {
             </p>
             <a
               href="#"
-              className="text-indigo-400 hover:underline"
+              className="text-indigo-400"
             >
               View Code
             </a>
           </div>
-          <div className="bg-neutral-900 border border-gray-800 rounded-xl p-8 shadow flex flex-col">
-            <h3 className="text-xl font-semibold text-white mb-2">
+          <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
+            <h3 className="text-xl text-white mb-2">
               Project Two
             </h3>
             <p className="text-gray-400 mb-4">
@@ -34,13 +34,13 @@ function Projects() {
             </p>
             <a
               href="#"
-              className="text-indigo-400 hover:underline"
+              className="text-indigo-400"
             >
               View Code
             </a>
           </div>
-          <div className="bg-neutral-900 border border-gray-800 rounded-xl p-8 shadow flex flex-col">
-            <h3 className="text-xl font-semibold text-white mb-2">
+          <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
+            <h3 className="text-xl text-white mb-2">
               Project Three
             </h3>
             <p className="text-gray-400 mb-4">
@@ -49,13 +49,13 @@ function Projects() {
             </p>
             <a
               href="#"
-              className="text-indigo-400 hover:underline"
+              className="text-indigo-400"
             >
               View Code
             </a>
           </div>
-          <div className="bg-neutral-900 border border-gray-800 rounded-xl p-8 shadow flex flex-col">
-            <h3 className="text-xl font-semibold text-white mb-2">
+          <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
+            <h3 className="text-xl text-white mb-2">
               Project Four
             </h3>
             <p className="text-gray-400 mb-4">
@@ -64,7 +64,7 @@ function Projects() {
             </p>
             <a
               href="#"
-              className="text-indigo-400 hover:underline"
+              className="text-indigo-400"
             >
               View Code
             </a>
