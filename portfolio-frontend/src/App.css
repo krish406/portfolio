@@ -9,14 +9,19 @@
     @apply fixed top-0 w-full bg-neutral-800 h-19 px-6 border-b-2 border-neutral-700 z-40 backdrop-blur-lg shadow-lg;
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+  
   body {
     font-family: "DM Sans", sans-serif;
   }
 
   .link {
-    @apply text-gray-300 py-6;
+    @apply text-gray-300;
     display: inline-block;
     position: relative;
+    padding: 1.5rem 0;
   }
 
   .link::after,
@@ -40,5 +45,16 @@
 
   .link:hover {
     @apply text-white;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

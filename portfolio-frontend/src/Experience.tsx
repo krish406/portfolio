@@ -1,3 +1,5 @@
+import { RevealOnScroll } from "./RevealOnScroll";
+
 function Experience() {
   const experiences = [
     {
@@ -23,6 +25,7 @@ function Experience() {
       id="experience"
       className="flex justify-center min-h-screen bg-neutral-950 pt-19"
     >
+      <RevealOnScroll>
       <div className="flex flex-col justify-center w-full max-w-6xl">
         <p className="text-5xl tracking-tight text-white text-center mb-8 mt-10">
           Experience
@@ -73,6 +76,7 @@ function Experience() {
           ))}
         </div>
       </div>
+      </RevealOnScroll>
     </section>
   );
 }
