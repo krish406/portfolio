@@ -1,21 +1,35 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
+interface Experience {
+  title: string;
+  company: string;
+  duration: string;
+  description: Array<string> | string;
+  technologies: Array<string>;
+}
+
 function Experience() {
-  const experiences = [
+  const experiences: Array<Experience> = [
     {
-      title: "Software Engineer",
-      company: "Company Name",
-      duration: "2023 - Present",
-      description:
-        "Developed and maintained web applications using React, TypeScript, and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.",
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB"],
+      title: "Software Engineering Intern",
+      company: "Typical PT",
+      duration: "Dec 2024 - Jan 2024",
+      description: [
+        "•	Collaborated with the lead web developer to create an NPTE exam preparation platform for DPT students",
+        "•	Automated the transfer of test bank questions using the Python-Excel library to reduce total development time by eight hours",
+        "•	Tested the site to ensure that it worked well across web and mobile platforms",
+      ],
+      technologies: ["Python", "openpyxl", "docx", "Jest"],
     },
     {
       title: "Frontend Developer",
       company: "Previous Company",
       duration: "2022 - 2023",
-      description:
-        "Built responsive user interfaces and improved application performance. Worked closely with design teams to implement pixel-perfect designs.",
+      description: [
+        "•	Collaborated with the lead web developer to create an NPTE exam preparation platform for DPT students",
+        "•	Automated the transfer of test bank questions using the Python-Excel library to reduce total development time by eight hours",
+        "•	Tested the site to ensure that it worked well across web and mobile platforms",
+      ],
       technologies: ["JavaScript", "React", "CSS", "HTML"],
     },
   ];
@@ -33,11 +47,10 @@ function Experience() {
           <div className="grid grid-cols-1 gap-1">
             {experiences.map((experience, index) => (
               <div key={index}>
-                <div className="flex flex-row mb-10 rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 p-6 hover:border-indigo-400 transition-all duration-300">
+                <div className="flex flex-row items-center mb-10 rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 p-6 hover:border-indigo-400 transition-all duration-300">
                   <img
-                    width={"150px"}
-                    height={"150px"}
-                    className="border border-white mr-8 flex-shrink-0 hidden md:block"
+                    src="./typt.png"
+                    className="w-[150px] h-[150px] object-cover border border-white mr-8 flex-shrink-0 hidden md:block"
                   />
                   <div className="flex flex-col flex-grow">
                     <div className="mb-4">
@@ -54,9 +67,15 @@ function Experience() {
                       </div>
                     </div>
 
-                    <p className="text-gray-400 mb-4">
-                      {experience.description}
-                    </p>
+                    <ul className="text-gray-400 mb-4">
+                      {Array.isArray(experience.description)
+                        ? experience.description.map(
+                            (exp: string, index: number) => (
+                              <li key={index}>{exp}</li>
+                            )
+                          )
+                        : ""}
+                    </ul>
 
                     <div className="flex flex-wrap gap-2">
                       {experience.technologies.map((tech, techIndex) => (

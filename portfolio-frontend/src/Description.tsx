@@ -35,8 +35,9 @@ function Description() {
               {text} <span> {isLoaded ? null : "|"} </span>
             </span>
             <p className="text-lg text-gray-400">
-              I specialize in making robust web applications using modern
-              technologies like React, TypeScript, and Node.js.
+              I'm a student at the University of South Florida (USF) who is
+              passionate about Computer Science and constantly learning about
+              new ways to create.
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-4">
               <a
@@ -46,10 +47,11 @@ function Description() {
                 View Projects
               </a>
               <a
-                href="/Krish_Shah_Resume.pdf"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-2xl text-white px-5 py-3 text-sm font-medium border border-neutral-700 hover:border-indigo-400 hover:bg-neutral-800 transition ease-in hover:-translate-y-1"
+                download
               >
                 Download Resume
               </a>
@@ -62,7 +64,7 @@ function Description() {
                 <FaGithub size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/krishshah"
+                href="https://www.linkedin.com/in/krish-shah-a5734428b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xl px-3 py-3 text-sm font-medium text-white border border-neutral-700 hover:border-indigo-400 hover:bg-neutral-800 transition ease-in hover:-translate-y-1 flex gap-2"
