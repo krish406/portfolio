@@ -28,7 +28,7 @@ function Description() {
       className="flex min-h-screen items-center justify-center bg-neutral-950 pt-19"
     >
       <RevealOnScroll>
-        <div className="flex flex-col sm:flex-col m-4 lg:m-10 lg:flex-row justify-center items-center max-w-[calc(100vw-5rem)] lg:max-w-5xl bg-neutral-900 lg:p-10 p-4 rounded-2xl border-2 border-neutral-700 overflow-hidden">
+        <div className="flex flex-col sm:flex-col m-2 lg:m-6 lg:flex-row justify-center items-center max-w-[calc(100vw-5rem)] lg:max-w-5xl bg-neutral-900 lg:p-10 p-4 rounded-2xl border-2 border-neutral-700 overflow-hidden">
           <div className="flex flex-col gap-2 md:p-8 py-10 md:py-20 lg:max-w-lg w-full">
             <p className="text-xl text-neutral-400">Hello, my name is Krish</p>
             <span className="text-5xl tracking-tight text-white py-1">
@@ -38,7 +38,7 @@ function Description() {
               I specialize in making robust web applications using modern
               technologies like React, TypeScript, and Node.js.
             </p>
-            <div className="mt-3 flex items-center gap-4">
+            <div className="mt-3 flex flex-wrap items-center gap-4">
               <a
                 href="#projects"
                 className="text-white rounded-2xl px-5 py-3 text-sm font-medium border border-neutral-700 hover:border-indigo-400 hover:bg-neutral-800 transition ease-in hover:-translate-y-1"

@@ -1,17 +1,22 @@
 import { useEffect } from "react";
+import type { Dispatch, SetStateAction } from "react";
 
-function Navbar() {
-  
+type NavProps = {
+  menuOpen: boolean;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+function Navbar({ menuOpen, setMenuOpen }: NavProps) {
   useEffect(() => {
-
-  })
+    document.body.style.overflow = menuOpen ? "hidden" : ""
+  }, [menuOpen]);
 
   return (
     <nav className="navbar">
       <div className="mx-auto px-4 h-full">
         <div className="flex flex-row justify-between items-center h-full">
           <span className="text-white text-xl">Krish Shah</span>
-          <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden">
+          <div className="absolute right-[20px] cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
             &#9776;
           </div>
           <div className="hidden md:flex md:items-center md:space-x-10">

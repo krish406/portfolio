@@ -7,7 +7,7 @@ function Projects() {
       className="flex justify-center min-h-screen bg-neutral-950 pt-19"
     >
       <RevealOnScroll>
-        <div className="flex flex-col w-full max-w-6xl">
+        <div className="flex flex-col w-full max-w-6xl px-6 lg:px-8">
           <p className="text-5xl tracking-tight text-white text-center mt-10 mb-8">
             Projects
           </p>
@@ -22,7 +22,7 @@ function Projects() {
                 href="#"
                 className="text-indigo-400"
               >
-                View Code
+                View on Github
               </a>
             </div>
             <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
@@ -35,7 +35,7 @@ function Projects() {
                 href="#"
                 className="text-indigo-400"
               >
-                View Code
+                View on Github
               </a>
             </div>
             <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
@@ -48,7 +48,7 @@ function Projects() {
                 href="#"
                 className="text-indigo-400"
               >
-                View Code
+                View on Github
               </a>
             </div>
             <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
@@ -61,7 +61,7 @@ function Projects() {
                 href="#"
                 className="text-indigo-400"
               >
-                View Code
+                View on Github
               </a>
             </div>
           </div>
