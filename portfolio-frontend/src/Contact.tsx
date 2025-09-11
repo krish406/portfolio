@@ -11,7 +11,7 @@ function Contact() {
         <p className="text-5xl tracking-tight text-white text-center mb-8">
             Contact
         </p>
-        <div className="flex items-center flex-col rounded-2xl w-full bg-neutral-900 border-2 border-neutral-700 max-w-4xl px-6 lg:p-8">
+        <div className="flex items-center flex-col rounded-2xl w-full bg-neutral-900 border-2 border-neutral-700 max-w-4xl px-6 lg:p-8 mb-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 mt-8">
             <div className="flex flex-col items-center text-center p-6 rounded-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300">
               <FaEnvelope className="text-indigo-400 text-3xl mb-4" />

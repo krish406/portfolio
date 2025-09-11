@@ -5,7 +5,8 @@ interface Experience {
   company: string;
   duration: string;
   description: Array<string> | string;
-  technologies: Array<string>;
+  technologies?: Array<string>;
+  source: string;
 }
 
 function Experience() {
@@ -17,20 +18,22 @@ function Experience() {
       description: [
         "•	Collaborated with the lead web developer to create an NPTE exam preparation platform for DPT students",
         "•	Automated the transfer of test bank questions using the Python-Excel library to reduce total development time by eight hours",
-        "•	Tested the site to ensure that it worked well across web and mobile platforms",
+        "•	Tested API endpoints using the Jest library, reducing errors by 20%",
       ],
       technologies: ["Python", "openpyxl", "docx", "Jest"],
+      source: "./typt2.jpeg"
     },
     {
-      title: "Frontend Developer",
-      company: "Previous Company",
-      duration: "2022 - 2023",
+      title: "Marketing Intern",
+      company: "Society of Asian Scientists and Engineers (SASE)",
+      duration: "Jan 2025 - May 2025",
       description: [
-        "•	Collaborated with the lead web developer to create an NPTE exam preparation platform for DPT students",
-        "•	Automated the transfer of test bank questions using the Python-Excel library to reduce total development time by eight hours",
-        "•	Tested the site to ensure that it worked well across web and mobile platforms",
+        "•	Integrated a Google Apps Script into the team's Google Calendar to reduce scheduling time by 50%",
+        "•	Coordinated with the USF Engineering Council to promote events and increase student engagement",
+        "•	Designed event marketing posts using Canva to support social media outreach",
       ],
-      technologies: ["JavaScript", "React", "CSS", "HTML"],
+      technologies: ["Google Apps Script", "JavaScript", "Canva"],
+      source: "./sase.png"
     },
   ];
 
@@ -49,7 +52,7 @@ function Experience() {
               <div key={index}>
                 <div className="flex flex-row items-center mb-10 rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 p-6 hover:border-indigo-400 transition-all duration-300">
                   <img
-                    src="./typt.png"
+                    src={experience.source}
                     className="w-[150px] h-[150px] object-cover border border-white mr-8 flex-shrink-0 hidden md:block"
                   />
                   <div className="flex flex-col flex-grow">
@@ -78,7 +81,7 @@ function Experience() {
                     </ul>
 
                     <div className="flex flex-wrap gap-2">
-                      {experience.technologies.map((tech, techIndex) => (
+                      {experience.technologies?.map((tech, techIndex) => (
                         <span
                           key={techIndex}
                           className="px-3 py-1 text-xs bg-neutral-800 text-indigo-300 rounded-full border border-neutral-600"

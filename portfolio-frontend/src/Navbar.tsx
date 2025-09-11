@@ -16,7 +16,7 @@ function Navbar({ menuOpen, setMenuOpen }: NavProps) {
       <div className="mx-auto px-4 h-full">
         <div className="flex flex-row justify-between items-center h-full">
           <span className="text-white text-xl">Krish Shah</span>
-          <div className="absolute right-[20px] cursor-pointer z-40 md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+          <div className="text-xl absolute right-[20px] cursor-pointer z-40 md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>
             &#9776;
           </div>
           <div className="hidden md:flex md:items-center md:space-x-10">

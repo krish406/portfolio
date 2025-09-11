@@ -1,6 +1,57 @@
 import { RevealOnScroll } from "./RevealOnScroll";
 
 function Projects() {
+  const projects = [
+    {
+      title: "Etch-A-Sketch",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "https://github.com/krish406/Etch-A-Sketch",
+    },
+    {
+      title: "Spatial Distance Histogram",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "#",
+    },
+    {
+      title: "Forecast Finder",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "https://github.com/krish406/weather-site",
+    },
+    {
+      title: "Calculator",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "https://github.com/krish406/odin-calculator",
+    },
+    {
+      title: "Tic-Tac-Toe",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "https://github.com/krish406/tic-tac-toe-v2",
+    },
+    {
+      title: "Line Following Robot",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "https://github.com/krish406/Line_Follower",
+    },
+    {
+      title: "Assembly Selection Sort",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "https://github.com/krish406/Assembly-Selection-Sort",
+    },
+    {
+      title: "Wall Following Robot",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      github: "#",
+    },
+  ];
+
   return (
     <section
       id="projects"
@@ -12,58 +63,21 @@ function Projects() {
             Projects
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
-              <h3 className="text-xl text-white mb-2">Project One</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque euismod, nisi eu consectetur.
-              </p>
-              <a
-                href="#"
-                className="text-indigo-400"
+            {projects.map((project, idx) => (
+              <div
+                key={idx}
+                className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8"
               >
-                View on Github
-              </a>
-            </div>
-            <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
-              <h3 className="text-xl text-white mb-2">Project Two</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque euismod, nisi eu consectetur.
-              </p>
-              <a
-                href="#"
-                className="text-indigo-400"
-              >
-                View on Github
-              </a>
-            </div>
-            <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
-              <h3 className="text-xl text-white mb-2">Project Three</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque euismod, nisi eu consectetur.
-              </p>
-              <a
-                href="#"
-                className="text-indigo-400"
-              >
-                View on Github
-              </a>
-            </div>
-            <div className="rounded-xl shadow-xl bg-neutral-900/95 border border-neutral-700 hover:border-indigo-400 transition-all duration-300 p-8">
-              <h3 className="text-xl text-white mb-2">Project Four</h3>
-              <p className="text-gray-400 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque euismod, nisi eu consectetur.
-              </p>
-              <a
-                href="#"
-                className="text-indigo-400"
-              >
-                View on Github
-              </a>
-            </div>
+                <h3 className="text-xl text-white mb-2">{project.title}</h3>
+                <p className="text-gray-400 mb-4">{project.description}</p>
+                <a
+                  href={project.github}
+                  className="text-indigo-400"
+                >
+                  View on Github
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </RevealOnScroll>
