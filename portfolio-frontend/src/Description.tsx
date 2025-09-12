@@ -74,8 +74,8 @@ function Description() {
             </div>
           </div>
           <img
-            className="lg:w-[300px] lg:h-[300px] max-w-[400px] max-h-[400px] w-full h-full border-2 border-white m-4"
-            src={reactLogo}
+            className="lg:w-[300px] lg:h-[300px] max-w-[400px] max-h-[400px] w-full h-full border-2 border-white m-4 object-cover"
+            src={"./IMG_2624.jpg"}
             alt=""
           />
         </div>

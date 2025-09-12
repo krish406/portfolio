@@ -4,50 +4,47 @@ function Projects() {
   const projects = [
     {
       title: "Etch-A-Sketch",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      description: "An interactive web application that allows users to create pixel art from their mouse interactions. Built using JavaScript and DOM manipulation",
       github: "https://github.com/krish406/Etch-A-Sketch",
     },
     {
       title: "Spatial Distance Histogram",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      description: "A CUDA-optimized implementation of a spatial distance histogram algorithm with accelerated performance achieved through parallel programming.",
       github: "#",
     },
     {
       title: "Forecast Finder",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+      description: "A full-stack application to display real-time weather data from OpenWeather API using a responsive grid-based UI.",
       github: "https://github.com/krish406/weather-site",
     },
     {
       title: "Calculator",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+        "An online calculator application that evaluate arithmetic expressions created through button inputs.",
       github: "https://github.com/krish406/odin-calculator",
     },
     {
       title: "Tic-Tac-Toe",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+        "An interactive web application that allows users to play Tic-Tac-Toe against each other.",
       github: "https://github.com/krish406/tic-tac-toe-v2",
-    },
-    {
-      title: "Line Following Robot",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
-      github: "https://github.com/krish406/Line_Follower",
     },
     {
       title: "Assembly Selection Sort",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+        "An implementation of the selection sort algorithm using RISC-V assembly.",
       github: "https://github.com/krish406/Assembly-Selection-Sort",
+    },
+    {
+      title: "Line Following Robot",
+      description:
+        "The arduino program used to direct a Line Following Robot's navigation based on IR sensor readings.",
+      github: "https://github.com/krish406/Line_Follower",
     },
     {
       title: "Wall Following Robot",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.",
+        "A Webots program used to allow a virtual robot to navigate through a maze using a PID controller and Left and Right Wall Following. Built using Python and the FAIRIS-Lite Library.",
       github: "#",
     },
   ];
