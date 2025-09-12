@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RevealOnScroll } from "./RevealOnScroll";
 
