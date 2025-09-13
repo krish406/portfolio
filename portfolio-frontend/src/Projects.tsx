@@ -54,7 +54,6 @@ function Projects() {
       id="projects"
       className="flex justify-center min-h-screen bg-neutral-950 pt-19"
     >
-      <RevealOnScroll>
         <div className="flex flex-col w-full max-w-6xl px-6 lg:px-8">
           <p className="text-5xl tracking-tight text-white text-center mt-10 mb-8">
             Projects
@@ -77,7 +76,6 @@ function Projects() {
             ))}
           </div>
         </div>
-      </RevealOnScroll>
     </section>
   );
 }
