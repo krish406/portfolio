@@ -47,6 +47,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }: NavProps) => {
       </a>
       <a
         href="#contact"
+        onClick={() => setMenuOpen(false)}
         className="link"
       >
         Contact
