@@ -46,7 +46,7 @@ function Description() {
                 View Projects
               </a>
               <a
-                href="/resume.pdf"
+                href="/Krish_Shah_resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-2xl text-white px-5 py-3 text-sm font-medium border border-neutral-700 hover:border-indigo-400 hover:bg-neutral-800 transition ease-in hover:-translate-y-1"

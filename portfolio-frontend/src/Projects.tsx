@@ -10,7 +10,7 @@ function Projects() {
     {
       title: "Spatial Distance Histogram",
       description: "A CUDA-optimized implementation of a spatial distance histogram algorithm with accelerated performance achieved through parallel programming.",
-      github: "#",
+      github: "https://github.com/krish406/CUDA-Spatial-Distance-Histogram",
     },
     {
       title: "Forecast Finder",
