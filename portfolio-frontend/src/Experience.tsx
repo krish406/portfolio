@@ -14,13 +14,13 @@ function Experience() {
     {
       title: "Software Engineering Intern",
       company: "Typical PT",
-      duration: "Dec 2024 - Jan 2024",
+      duration: "June 2025 - August 2025",
       description: [
-        "•	Collaborated with the lead web developer to create an NPTE exam preparation platform for DPT students",
+        "•	Collaborated with the lead web developer to create an NPTE exam preparation platform for 1000+ DPT students",
         "•	Automated the transfer of test bank questions using the Python-Excel library to reduce total development time by eight hours",
-        "•	Tested API endpoints using the Jest library, reducing errors by 20%",
+        "•	Implemented a dynamic, responsive user interface using React and Tailwind CSS to enhance user experience.",
       ],
-      technologies: ["Python", "openpyxl", "docx", "Jest"],
+      technologies: ["Python", "openpyxl", "docx", "TailwindCSS"],
       source: "./typt2.jpeg"
     },
     {
