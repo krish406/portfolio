@@ -20,7 +20,7 @@ function Experience() {
         "•	Automated the transfer of test bank questions using the Python-Excel library to reduce total development time by eight hours",
         "•	Implemented a dynamic, responsive user interface using React and Tailwind CSS to enhance user experience.",
       ],
-      technologies: ["Python", "openpyxl", "docx", "TailwindCSS"],
+      technologies: ["Python", "React", "openpyxl", "docx", "TailwindCSS"],
       source: "./typt2.jpeg"
     },
     {
