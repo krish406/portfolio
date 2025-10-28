@@ -41,12 +41,6 @@ function Projects() {
         "The arduino program used to direct a Line Following Robot's navigation based on IR sensor readings.",
       github: "https://github.com/krish406/Line_Follower",
     },
-    {
-      title: "Wall Following Robot",
-      description:
-        "A Webots program used to allow a virtual robot to navigate through a maze using a PID controller and Left and Right Wall Following. Built using Python and the FAIRIS-Lite Library.",
-      github: "#",
-    },
   ];
 
   return (
